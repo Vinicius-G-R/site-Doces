@@ -12,3 +12,15 @@
     margin: 0px;
     padding: 0px;
 }
+
+#containerMenu {
+    display: flex;
+    
+}
+
+body img{
+    height: 100px;
+}
+button {
+    background-color: #595958;
+}
