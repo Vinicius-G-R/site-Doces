@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;800&display=swap');
+
+:root{
+    --cor1: #595958;
+    --cor2: #F28729;
+
+    --fontpadrao: 'Poppins', sans-serif;
+    --fontdestaque: 'Dancing Script', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    box-sizing: border-box;
+    margin-top: 15px;
+    height: 100px;
+    background: #f2872947;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--fontpadrao);
+    color: var(--cor2);
+    padding: 20px;
+}
+
+header img {
+    height: 180%;
+}
+
+#containerQS {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.boxQS {
+    width: 300px;
+    text-align: center;
+    font-family: var(--fontpadrao);
+}
+
+.boxQS i {
+    font-size: 2.5em;
+    color: #f28729;
+    margin-bottom: 5px;
+}
+
+#containerQS > .boxQS > h2 {
+    color: var(--cor2);
+}
+
+#containerQS > .boxQS > p {
+    width: 80%;
+    margin: auto;
+}
+
+.boxQS li {
+    list-style-type: none;
+}
+
+#containerH {
+    background: url(../imgs/QSback.jpg) no-repeat;
+    background-size:cover ;
+    height: 500px;
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    position: relative;
+}
+
+#containerH h2 {
+    font-size: 3em;
+    font-family: var(--fontdestaque);
+    color: var(--cor2);
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+#containerH p {
+    font-family: var(--fontpadrao);
+    color: white;
+    width: 60%;
+    z-index: 2;
+    margin-top: 5px;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+
+
+#containerH::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.931) 20%, transparent) ;/* Aqui você pode ajustar a cor e a transparência do filtro */
+    z-index: 1;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}

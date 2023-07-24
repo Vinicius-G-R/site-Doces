@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;800&display=swap');
+
+:root{
+    --cor1: #595958;
+    --cor2: #F28729;
+
+    --fontpadrao: 'Poppins', sans-serif;
+    --fontdestaque: 'Dancing Script', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
