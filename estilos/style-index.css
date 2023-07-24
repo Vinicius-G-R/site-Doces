@@ -13,14 +13,91 @@
     padding: 0px;
 }
 
+body {
+    background: #00000000;
+}
+
 #containerMenu {
     display: flex;
+    background: #f2872927;
+    align-items: center;
+    font-family: var(--fontpadrao);
+    font-size: .6em;
+    height: 80px;
+    color: var(--cor1);
+}
+
+#logoNav {
+    height: 80px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#barra{
+    border-right: 2px solid var(--cor1);
+    height: 40px;
+    margin-right: 20px;
+}
+
+#nav {
+    margin-right: 20px;
+}
+
+header {
+    height: 600px;
+    width: 96%;
+    border-radius: 35px;
+    margin: auto;
+    margin-top: 20px;
+    background: #525252;
+    overflow: hidden;
+}
+
+#conatinerheader {
+    background-color: #F3F2EE;
+    display: flex;
+    justify-content: space-between;
+    background: url(../imgs/imgfundo01.png) no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 500px black;
+}
+
+header > div div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    justify-content: center;
+}
+
+header img {
+    height: 600px;
     
 }
 
-body img{
-    height: 100px;
+header h1 {
+    font-family: var(--fontdestaque);
+    color: var(--cor2);
+    font-size: 3em;
 }
-button {
-    background-color: #595958;
+
+header p {
+    font-family: var(--fontpadrao);
+    font-weight: bold;
+    color: var(--cor1);
+    font-size: 2.4em;
+    width: 200%;
+    margin-top: 5px;
+    line-height: 1.2em;
+}
+
+header button{
+    background: var(--cor2);
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    padding: 10px;
+    font-size: .7em;
+    color: white;
+    margin-top: 50px;
+    cursor: pointer;
 }
